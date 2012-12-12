@@ -92,8 +92,8 @@ class TexticleTest < Test::Unit::TestCase
       end
     end
 
-    should "define a #search method" do
-      assert GameExtendedWithTexticle.respond_to?(:search)
+    should "not define a #search method" do
+      assert !GameExtendedWithTexticle.respond_to?(:search)
     end
 
     context "when searching with a String argument" do
